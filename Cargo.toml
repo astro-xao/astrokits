@@ -1,3 +1,36 @@
+[package]
+name = "astrokits"
+version = "0.1.0"
+edition = "2024"
+authors = ["huxulm@gmail.com"]
+description = "Main crate for the astro-xao/astro-kits workspace"
+keywords = ["astronomy"]
+license = "MIT"
+repository = "https://github.com/astro-xao/astrokits"
+
 [workspace]
 resolver = "3"
 members = ["crates/*"]
+
+[dependencies]
+libcspice-sys = { version = "0.1.4", path = "./crates/libcspice-sys", features = [] }
+calceph-sys = { version = "0.1.4", path = "./crates/calceph-sys", features = [] }
+supernovas-sys = { version = "0.1.4", path = "./crates/supernovas-sys", features = [] }
+
+[features]
+default = [
+    "calceph",
+    "cspice",
+    "novas",
+    "build-src",
+]
+build-src = [
+    "libcspice-sys/cspice-src",
+    "calceph-sys/calceph-src",
+    "supernovas-sys/novas-src",
+    "supernovas-sys/cspice-src",
+    "supernovas-sys/calceph-src",
+]
+novas = []
+cspice = []
+calceph = []

@@ -1,4 +1,4 @@
-# astro-kits
+# Astro Kits
 
 `astro-kits` 是一个集合了多种用于天文计算的 Rust 平台套件。主要包含以下组件：
 
