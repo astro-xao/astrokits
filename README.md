@@ -1,4 +1,7 @@
 # Astro Kits
+[![License](https://img.shields.io/badge/license-MIT%2FApache-blue.svg)](https://github.com/astro-xao/astrokits#license)
+[![Docs](https://docs.rs/astrokits/badge.svg)](https://docs.rs/astrokits/latest/astrokits/)
+[![CI](https://github.com/astro-xao/astrokits/workflows/CI/badge.svg)](https://github.com/astro-xao/astrokits/actions)
 
 `astro-kits` 是一个集合了多种用于天文计算的 Rust 平台套件。主要包含以下组件：
 

@@ -1,6 +1,6 @@
 [package]
 name = "astrokits"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["huxulm@gmail.com"]
 description = "Main crate for the astro-xao/astro-kits workspace"
@@ -22,7 +22,6 @@ default = [
     "calceph",
     "cspice",
     "novas",
-    "build-src",
 ]
 build-src = [
     "libcspice-sys/cspice-src",
