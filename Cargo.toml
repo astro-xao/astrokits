@@ -1,6 +1,6 @@
 [package]
 name = "astrokits"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 authors = ["huxulm@gmail.com"]
 description = "Main crate for the astro-xao/astro-kits workspace"

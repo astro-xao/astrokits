@@ -3,10 +3,12 @@
 [![Docs](https://docs.rs/astrokits/badge.svg)](https://docs.rs/astrokits/latest/astrokits/)
 [![CI](https://github.com/astro-xao/astrokits/workflows/CI/badge.svg)](https://github.com/astro-xao/astrokits/actions)
 
-`astro-kits` 是一个集合了多种用于天文计算的 Rust 平台套件。主要包含以下组件：
+[README 中文](./README-zh.md)
 
-- [`calceph-sys`](https://github.com/astro-xao/astrokits/calceph-sys)：Calceph C 库的 Rust 绑定，用于高精度天体历算。
-- [`libcspice-sys`](https://github.com/astro-xao/astrokits/libcspice-sys)：NAIF SPICE C 库的 Rust 绑定，支持空间科学任务的几何计算。
-- [`supernovas-sys`](https://github.com/astro-xao/astrokits/supernovas-sys)：SuperNovas C 库的 Rust 绑定，提供恒星和超新星相关的天文计算。
+`astro-kits` is a collection of Rust toolkits for astronomical calculations. It mainly includes the following components:
 
-这些套件为 Rust 开发者提供了高效、可靠的天文计算能力。
+- [`calceph-sys`](https://github.com/astro-xao/astrokits/tree/main/crates/calceph-sys): Rust bindings for the Calceph C library, providing high-precision ephemeris calculations.
+- [`libcspice-sys`](https://github.com/astro-xao/astrokits/tree/main/crates/libcspice-sys): Rust bindings for the NAIF SPICE C library, supporting geometric computations for space science missions.
+- [`supernovas-sys`](https://github.com/astro-xao/astrokits/tree/main/crates/supernovas-sys): Rust bindings for the SuperNovas C library, offering astronomical calculations related to stars and supernovae.
+
+These toolkits provide Rust developers with efficient and reliable astronomical computation capabilities.
