@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: ${{ matrix.SHELL }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        include:
+          - os: windows-latest
+            SHELL: powershell
+          - os: ubuntu-latest
+            SHELL: bash
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build on ${{ matrix.os }}
+        run: cargo build -vv --all-features

@@ -1,0 +1,12 @@
+# Rust build artifacts
+/target
+crates/**/target
+
+# Cargo
+Cargo.lock
+.cargo/config
+.cargo/config.toml
+
+# Example data
+examples/data
+crates/**/examples/data
